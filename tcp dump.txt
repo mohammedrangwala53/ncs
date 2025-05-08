@@ -1,0 +1,13 @@
+Task 1: Capture All Network Traffic:
+sudo tcpdump -i eth0 -w all_traffic.pcap
+
+Task 2: Capture Only HTTP Traffic:
+tcpdump -r all_traffic.pcap
+sudo tcpdump -i eth0 port 80
+
+Task 3: Capture and Analyze TCP Handshake:
+sudo tcpdump -i eth0 tcp -w tcp_handshake.pcap
+
+
+Capture packets to a specific host:
+sudo tcpdump host 192.168.1.100

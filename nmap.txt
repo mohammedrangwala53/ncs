@@ -1,0 +1,14 @@
+# 1. Ping scan
+nmap -sn <target-ip>
+
+# 2. Port scan
+nmap -p- <target-ip>
+
+# 3. Service/version detection
+nmap -sV <target-ip>
+
+# 4. OS Detection
+nmap -O <target-ip>
+
+# 5. Aggressive scan
+nmap -A <target-ip>

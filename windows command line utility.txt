@@ -1,0 +1,21 @@
+# 1. View network config
+ipconfig /all
+
+# 2. Ping default gateway
+ping <default-gateway>
+
+# 3. Trace route
+tracert google.com
+
+# 4. DNS resolution
+nslookup google.com
+
+# 5. Active connections
+netstat -an
+
+netstat -an | findstr ESTABLISHED | find /c /v ""
+
+netstat -an | findstr ":80"
+
+netstat -an | findstr ":443"
+

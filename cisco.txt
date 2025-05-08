@@ -1,0 +1,25 @@
+ROUTER
+
+En
+Cont t
+line console 0
+login
+password cisco
+Exit exit exit
+En
+Conf t
+enable secret cisco
+banner motd #unautho#
+line vty 0 5
+password telnet
+Exit exit
+
+
+
+PC:
+
+telnet 192.168.1.1
+telnet
+enable
+Cisco
+
